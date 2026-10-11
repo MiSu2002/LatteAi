@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './styles.css';
@@ -61,7 +62,7 @@ export default function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse justify-content-end" id="navContent">
+          <div className="collapse navbar-collapse justify-content-end mobile-menu-collapse p-3 p-lg-0 rounded-3 mt-3 mt-lg-0" id="navContent">
             <ul className="navbar-nav gap-lg-4 align-items-center">
               <li className="nav-item">
                 <a 
@@ -254,8 +255,8 @@ export default function App() {
                   <button className="btn btn-info px-4 py-2 rounded-pill fw-semibold text-dark">
                     View on AppExchange
                   </button>
-                  <button className="btn btn-outline-light px-4 py-2 rounded-pill fw-medium">
-                    Schedule Demo
+                  <button className="btn btn-outline-dark px-4 py-2 border-3 rounded-pill fw-medium">
+                    <Link to="schedule-demo-form" className='text-white fw-bold text-decoration-none d-block'>Schedule Demo</Link>
                   </button>
                 </div>
               </div>
@@ -282,7 +283,9 @@ export default function App() {
                 Interested in funding the research and engineering of LatteAi as we scale next-generation agentic reasoning architectures? We would love to connect.
               </p>
               <button className="btn btn-success px-5 py-3 rounded-pill fw-semibold text-white shadow-sm">
-                Interested for Funding
+                <Link to="/funding-interest-form" className="text-white text-decoration-none d-block">
+                    Interested for Funding
+                  </Link>
               </button>
             </div>
           </div>
@@ -297,8 +300,8 @@ export default function App() {
                       Interested in contributing to our codebase and core architectures? Fill out our form to join our engineering team.
                     </p>
                   </div>
-                  <button className="btn btn-outline-info px-4 py-2 rounded-pill fw-medium mx-auto">
-                    Contributor Form
+                  <button className="contributor btn btn-info px-4 py-2 rounded-pill fw-medium mx-auto shadow-sm">
+                    <Link to="contributor-interest-form" className='text-dark fw-bold text-decoration-none d-block'>Contributor Form</Link>
                   </button>
                 </div>
               </div>
@@ -311,8 +314,8 @@ export default function App() {
                       Are you a Salesforce product consumer looking to integrate advanced AI agents? Get in touch with our team.
                     </p>
                   </div>
-                  <button className="btn btn-outline-info px-4 py-2 rounded-pill fw-medium mx-auto">
-                    Consumer Contact Form
+                  <button className="contributor btn btn-info px-4 py-2 rounded-pill fw-medium mx-auto shadow-sm">
+                    <Link to="consumer-contact-form" className='text-dark fw-bold text-decoration-none d-block'>Consumer Contact Form</Link>
                   </button>
                 </div>
               </div>
