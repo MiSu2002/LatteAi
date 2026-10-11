@@ -141,8 +141,15 @@ nav{
   min-height: 93vh;
 }
 
-
-
 .home .row{
   margin-top: 15vh;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-menu-collapse {
+    background-color: rgba(0, 14, 29, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
 }
