@@ -142,12 +142,15 @@ export default function App() {
               className="btn btn-dark-custom px-4 py-3 rounded-pill text-white fw-medium shadow-sm">
                 Explore More
               </button>
-              <button className="btn btn-link text-white text-decoration-none d-flex align-items-center gap-2">
-                <span className="play-icon rounded-circle d-flex align-items-center justify-content-center bg-white text-dark">
-                  ▶
-                </span> 
-                Watch Demo
-              </button>
+              <button 
+  onClick={() => window.open("https://n5dfmgjzzd72yhbu.public.blob.vercel-storage.com/latteops-demo.mp4", "_blank")}
+  className="btn btn-link text-white text-decoration-none d-flex align-items-center gap-2"
+>
+  <span className="play-icon rounded-circle d-flex align-items-center justify-content-center bg-white text-dark" style={{ width: '32px', height: '32px' }}>
+    ▶
+  </span> 
+  Watch Demo
+</button>
             </div>
 
           </div>
@@ -228,42 +231,57 @@ export default function App() {
 
         {/* --- PRODUCTS SECTION --- */}
         <section id="products" className="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center py-5">
-          <div className="row w-100 pt-4 mx-auto align-items-center justify-content-center">
-          <div className="col-12 text-center mb-4">
-            <h3 className="fw-light tracking-wide text-uppercase fs-5 text-info">Our Flagship Solution</h3>
-            <h2 className="display-6 fw-bold mb-3">Introducing LatteOps</h2>
-            <p className="text-secondary mx-auto col-lg-8 mb-5">
-              LatteOps is an absolute game-changer built for the Salesforce ecosystem. By integrating native agentic reasoning and dynamic action routing directly into enterprise workflows, LatteOps automates complex operational overhead, eliminating manual data entry and transforming how teams manage CRM intelligence.
-            </p>
+  <div className="row w-100 pt-4 mx-auto align-items-center justify-content-center">
+    <div className="col-12 text-center mb-4">
+      <h3 className="fw-light tracking-wide text-uppercase fs-5 text-info">Our Flagship Solution</h3>
+      <h2 className="display-6 fw-bold mb-3">Introducing LatteOps</h2>
+      <p className="text-secondary mx-auto col-lg-8 mb-5">
+        LatteOps is an absolute game-changer built for the Salesforce ecosystem. By integrating native agentic reasoning and dynamic action routing directly into enterprise workflows, LatteOps automates complex operational overhead, eliminating manual data entry and transforming how teams manage CRM intelligence.
+      </p>
+    </div>
+
+    <div className="col-12 col-lg-10">
+      <div className="glass-arch-card p-4 p-lg-5 rounded-4 d-flex flex-column flex-lg-row align-items-center gap-4 text-start">
+        <div className="appexchange-icon-box flex-shrink-0 d-flex align-items-center justify-content-center rounded-4 p-4 text-info bg-info bg-opacity-10 align-self-start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" className="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+            <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.38C1.266 6.095 0 7.555 0 9.313 0 11.356 1.664 13 3.715 13h8.565C14.286 13 16 11.356 16 9.313c0-1.918-1.52-3.474-3.408-3.535C12.29 4.54 10.332 2 8 2zM6.854 7.146a.5.5 0 0 1 .708 0L8 7.586l.438-.44a.5.5 0 1 1 .708.708l-1.146 1.146a.5.5 0 0 1-.708 0L6.146 7.854a.5.5 0 0 1 0-.708zM8 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+
+        <div className="flex-grow-1">
+          <span className="badge bg-light bg-opacity-10 text-white-50 px-3 py-1 rounded-pill mb-2">Salesforce AppExchange Partner</span>
+          <h3 className="fw-bold mb-3">LatteOps: Native Autonomous Operations</h3>
+          <p className="text-secondary mb-4">
+            Built as an official Salesforce partner offering, LatteOps scales team productivity by deploying autonomous reasoning loops that execute multi-step actions across your entire CRM data stack with unprecedented accuracy.
+          </p>
+
+          {/* Architecture Details Box */}
+          <div className="bg-dark bg-opacity-50 border border-secondary border-opacity-25 p-3 rounded-3 mb-4 text-secondary small">
+            <h6 className="text-info fw-bold mb-2">Under-the-Hood Architecture & Capabilities:</h6>
+            <ul className="mb-0 ps-3">
+              <li className="mb-1"><strong>Core Runtime:</strong> Built on Python 3.14 powering the execution engine, utilizing Claude Haiku 5.5 for rapid, efficient agentic reasoning.</li>
+              <li className="mb-1"><strong>Serverless Infrastructure:</strong> Deployed on AWS Lambda with full backend support managed from our end, complete with BYOK (Bring Your Own Key) model architecture flexibility.</li>
+              <li className="mb-1"><strong>SCADA Event Integration:</strong> Instantly captures real-time platform events triggered from SCADA alerts to autonomously instantiate and route Salesforce cases.</li>
+              <li className="mb-1"><strong>Reliability & Debugging:</strong> Built-in integration log support for deep troubleshooting if any transaction fails, backed by 100% test case passing assurance.</li>
+            </ul>
           </div>
 
-          <div className="col-12 col-lg-10">
-            <div className="glass-arch-card p-4 p-lg-5 rounded-4 d-flex flex-column flex-lg-row align-items-center gap-4">
-              <div className="appexchange-icon-box flex-shrink-0 d-flex align-items-center justify-content-center rounded-4 p-4 text-info bg-info bg-opacity-10">
-                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" className="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
-                  <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.38C1.266 6.095 0 7.555 0 9.313 0 11.356 1.664 13 3.715 13h8.565C14.286 13 16 11.356 16 9.313c0-1.918-1.52-3.474-3.408-3.535C12.29 4.54 10.332 2 8 2zM6.854 7.146a.5.5 0 0 1 .708 0L8 7.586l.438-.44a.5.5 0 1 1 .708.708l-1.146 1.146a.5.5 0 0 1-.708 0L6.146 7.854a.5.5 0 0 1 0-.708zM8 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-              </div>
-
-              <div className="flex-grow-1 text-center text-lg-start">
-                <span className="badge bg-light bg-opacity-10 text-white-50 px-3 py-1 rounded-pill mb-2">Salesforce AppExchange Partner</span>
-                <h3 className="fw-bold mb-3">LatteOps: Native Autonomous Operations</h3>
-                <p className="text-secondary mb-4">
-                  Built as an official Salesforce partner offering, LatteOps scales team productivity by deploying autonomous reasoning loops that execute multi-step actions across your entire CRM data stack with unprecedented accuracy.
-                </p>
-                <div className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                  <button className="btn btn-info px-4 py-2 rounded-pill fw-semibold text-dark">
-                    View on AppExchange
-                  </button>
-                  <button className="btn btn-outline-dark px-4 py-2 border-3 rounded-pill fw-medium">
-                    <Link to="schedule-demo-form" className='text-white fw-bold text-decoration-none d-block'>Schedule Demo</Link>
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+            <button className="btn btn-info px-4 py-2 rounded-pill fw-semibold text-dark">
+              View on AppExchange
+            </button>
+            <button className="btn btn-outline-dark px-4 py-2 border-3 rounded-pill fw-medium">
+              <Link to="schedule-demo-form" className='text-white fw-bold text-decoration-none d-block'>Schedule Demo</Link>
+            </button>
+            <button className="btn btn-outline-info px-4 py-2 rounded-pill fw-semibold">
+              Watch Demo
+            </button>
           </div>
-          </div>
-        </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* --- RESEARCH SECTION --- */}
         <section id="research" className="min-vh-100 d-flex flex-column justify-content-center align-items-center text-center py-5">

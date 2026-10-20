@@ -26,7 +26,7 @@ export function ScheduleDemoPage() {
       `Submitted via LatteAi Schedule Demo Portal`
     );
 
-    window.location.href = `mailto:demo@latteai.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:demo@latteai.co.in?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -43,7 +43,7 @@ export function ScheduleDemoPage() {
               </div>
 
               <p className="text-secondary small mb-4">
-                Experience autonomous CRM workflows live. Submitting this request sends an appointment package directly to our solutions team at <code className="text-info">demo@latteai.com</code>.
+                Experience autonomous CRM workflows live. Submitting this request sends an appointment package directly to our solutions team at <code className="text-info">demo@latteai.co.in</code>.
               </p>
 
               <form onSubmit={handleDemoSubmit}>

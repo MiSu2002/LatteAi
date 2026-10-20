@@ -24,7 +24,7 @@ export function ContributorFormPage() {
       `Submitted via LatteAi Contributor Portal`
     );
 
-    window.location.href = `mailto:engineering@latteai.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:engineering@latteai.co.in?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -41,7 +41,7 @@ export function ContributorFormPage() {
               </div>
 
               <p className="text-secondary small mb-4">
-                Contribute to our core Atlas Reasoning frameworks and Agentforce integrations. Submitting prepares an onboarding package directly to <code className="text-info">engineering@latteai.com</code>.
+                Contribute to our core Atlas Reasoning frameworks and Agentforce integrations. Submitting prepares an onboarding package directly to <code className="text-info">engineering@latteai.co.in</code>.
               </p>
 
               <form onSubmit={handleSubmit}>

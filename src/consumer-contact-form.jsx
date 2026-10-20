@@ -24,7 +24,7 @@ export function ConsumerContactPage() {
       `Submitted via LatteAi Consumer Portal`
     );
 
-    window.location.href = `mailto:support@latteai.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:support@latteai.co.in?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -41,7 +41,7 @@ export function ConsumerContactPage() {
               </div>
 
               <p className="text-secondary small mb-4">
-                Supercharge your Agentforce workflows with LatteOps. Submitting connects you directly with our customer success team at <code className="text-info">support@latteai.com</code>.
+                Supercharge your Agentforce workflows with LatteOps. Submitting connects you directly with our customer success team at <code className="text-info">support@latteai.co.in</code>.
               </p>
 
               <form onSubmit={handleSubmit}>

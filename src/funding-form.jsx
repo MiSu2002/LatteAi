@@ -24,7 +24,7 @@ export function FundingInterestPage() {
       `Submitted via LatteAi Investor Proposal Route`
     );
 
-    window.location.href = `mailto:investors@latteai.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:investors@latteai.co.in?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -40,7 +40,7 @@ export function FundingInterestPage() {
             </div>
 
             <p className="text-secondary small mb-4">
-              Fill out the parameters below. Submitting will dispatch an executive proposal directly to our business email at <code className="text-info">investors@latteai.com</code>.
+              Fill out the parameters below. Submitting will dispatch an executive proposal directly to our business email at <code className="text-info">investors@latteai.co.in</code>.
             </p>
 
             <form onSubmit={handleFundingSubmit}>
