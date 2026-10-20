@@ -273,9 +273,12 @@ export default function App() {
             <button className="btn btn-outline-dark px-4 py-2 border-3 rounded-pill fw-medium">
               <Link to="schedule-demo-form" className='text-white fw-bold text-decoration-none d-block'>Schedule Demo</Link>
             </button>
-            <button className="btn btn-outline-info px-4 py-2 rounded-pill fw-semibold">
-              Watch Demo
-            </button>
+            <button 
+  onClick={() => window.open("https://n5dfmgjzzd72yhbu.public.blob.vercel-storage.com/latteops-demo.mp4", "_blank")}
+  className="btn btn-outline-info px-4 py-2 rounded-pill fw-semibold"
+>
+  Watch Demo
+</button>
           </div>
         </div>
       </div>
